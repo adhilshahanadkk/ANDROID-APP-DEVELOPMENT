@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@drawable/co_ic" />
+
+    <TextView
+        android:id="@+id/tiT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Counter"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total count"
+        android:textSize="20sp"
+        android:textColor="#3C2A0A"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/countId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="100sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/BtMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_minus"
+            android:text= "-"
+            android:textSize="30dp"
+            android:layout_margin="5dp"
+            android:height="60dp"
+            android:width="60dp"
+            />
+
+        <Button
+
+            android:id="@+id/BtPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_plus"
+            android:text="+"
+            android:textSize="30dp"
+            android:width="150dp"
+            android:height="60dp"
+            android:layout_margin="5dp"
+
+
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/txId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="@color/black"
+
+
+
+        />
+</LinearLayout>
